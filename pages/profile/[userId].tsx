@@ -37,6 +37,7 @@ const Profile = ({ data }: IProps) => {
   }, [showUserVideos, userLikedVideos, userVideos]);
 
   return (
+    <>
     <div className='w-full'>
       <div className='flex gap-6 md:gap-10 mb-4 bg-white w-full'>
         <div className='w-16 h-16 md:w-32 md:h-32'>
@@ -55,7 +56,7 @@ const Profile = ({ data }: IProps) => {
             <span>{user.userName.replace(/\s+/g, '')} </span>
             <GoVerified className='text-blue-400 md:text-xl text-md' />
           </div>
-          <p className='text-sm font-medium'> {user.userName}</p>
+          <p className='text-sm font-medium'> {user.userName} 😎</p>
         </div>
       </div>
       <div>
@@ -80,6 +81,7 @@ const Profile = ({ data }: IProps) => {
         </div>
       </div>
     </div>
+      </>
   );
 };
 
